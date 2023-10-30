@@ -25,3 +25,4 @@ jobs:
         run: echo '${{ toJSON(github)}}'
       - name: Dump GitHub context
         run: echo '${{ toJSON(runner)}}'
+      - uses: sofusalbertsen/custom-action@main
