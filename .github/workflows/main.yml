@@ -18,3 +18,7 @@ jobs:
         run: |
           echo "The repository ${{ github.repository }} contains the following files:"
           tree
+      - name: Dump GitHub context
+        run: echo '${{ toJSON(github)}}'
+      - name: Dump GitHub context
+        run: echo '${{ toJSON(runner)}}'
