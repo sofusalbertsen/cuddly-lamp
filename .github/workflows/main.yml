@@ -11,6 +11,9 @@ jobs:
     steps:
       - name: say hi
         run: echo hello world
+      - name: try
+        run: "echo 🎉 The job was triggered by event: ${{ github.event_name }}"
       - run: |
           echo "🎉 The job was triggered by event: ${{ github.event_name }}"
           echo "🔎 The name of your branch is ${{ github.ref }} and your repository is ."
+          echo "another thing"
